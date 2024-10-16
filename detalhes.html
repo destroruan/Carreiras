@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carreira - Agência Luppi</title>
+    <title id="titulo-page"></title>
     <link rel="shortcut icon" href="https://agencialuppi.com.br/wp-content/uploads/2023/02/svg-luppi.svg" type="image/x-icon">
     <link rel="stylesheet" href="view/assets/simbols/css/all.css">
     <link rel="stylesheet" href="view/assets/css/defaut.css">
@@ -13,21 +13,25 @@
         <div class="flex mediaquery">
             <div id="logotipo"></div>
             <div id="login-user">
-                <a href=""><i class="fa-solid fa-user"></i> Meu usuário</a>
-                <p>entre ou cadastre-se</p>
+                <a href=""><i class="fa-solid fa-user"></i> RUAN</a>
             </div>
         </div>
     </header>
     <main>
-        <section id="search-job" class="flex">
-            <div class="mediaquery">
-                <h1>PESQUISE POR OPORTUNIDADES (INSCRIÇÕES ABERTAS)</h1>
-                <form action="" method="post" class="flex">
-                    <div>
-                        <input type="text" name="palavrachave" id="palavrachave" placeholder="PALAVRA-CHAVE | ADMINISTRAÇÃO, MARKETING, REMOTO">
-                    </div>
-                    <button type="submit">BUSCAR</button>
-                </form>
+        <section id="info-job" class="flex">
+            <div class="mediaquery" id="informations-job">
+                <h1>BDR - Prospecção e Qualificação de Leads - remoto - PJ</h1> 
+                <div>
+                    <i class="fa-solid fa-location-dot"></i><h3>Remoto - Brasil</h3>
+                </div> 
+                <div>
+                    <i class="fa-solid fa-calendar-days vermelho"></i><h3>termina hoje</h3>
+                </div>
+                <div id="to-share">
+                    <a href="" title="Compartilhar - LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="" title="Compartilhar - Facebook"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="" title="Compartilhar - E-mail"><i class="fa-solid fa-square-envelope"></i></a>
+                </div>              
             </div>
         </section>
         <section id="vagas-abertas">
@@ -46,6 +50,6 @@
             </div>
         </section>
     </main> 
-    <script src="controller/controller.js"></script>   
+    <script src="controller/controller.js"></script>    
 </body>
 </html>

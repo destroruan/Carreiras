@@ -24,6 +24,7 @@
 .vaga > h1 {
     font-size: var(--fonte-padrao);
     color: var(--amarelo);
+    text-transform: uppercase;
 }
 .vaga > h2 {
     font-size: var(--fonte-padrao);

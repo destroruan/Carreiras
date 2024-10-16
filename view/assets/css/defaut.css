@@ -4,6 +4,7 @@
     --fonte-menor: 12px;
     --fonte-media: 14px;
     --fonte-padrao: 16px;
+    --fonte-maior: 24px;
     --preto:  rgb(29, 29, 29);
     --amarelo: #ffc700;
 }
@@ -39,7 +40,8 @@ header {
     font-weight: bold;
     color: white;
 }
-#search-job {
+#search-job,
+#info-job {
     position: relative;
     height: 20vh;
     text-align: center;
@@ -47,8 +49,8 @@ header {
     background-size: cover;
     color: var(--amarelo);
 }
-
-#search-job::before {
+#search-job::before,
+#info-job::before {
     content: "";
     position: absolute;
     top: 0;
@@ -60,8 +62,8 @@ header {
     z-index: 1;
     pointer-events: none;
 }
-
-#search-job > * {
+#search-job > *,
+#info-job > * {
     position: relative;
     z-index: 2;
 }
@@ -92,4 +94,47 @@ header {
 }
 #vagas-abertas {
     margin-top: 20px;
+}
+#informations-job {
+    text-align: justify;
+    padding: 10px;
+    width: 100%;
+}
+#informations-job > h1 {
+    font-size: var(--fonte-padrao);
+    color: white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+#informations-job > div {
+    margin-bottom: 5px;    
+}
+#informations-job > div > i {
+    font-size: var(--fonte-menor);
+}
+#informations-job > div > i,
+#informations-job > div > h3 {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: var(--fonte-menor);
+    color: white;
+    margin-right: 5px;
+}
+#to-share {
+    margin-top: 10px;
+}
+#to-share > a {
+    text-decoration: none;
+    color: white;
+    font-size: var(--fonte-maior);
+    margin-right: 5px;
+    opacity: 0.8;
+}
+#to-share > a > i {
+    padding: 5px;
+    background-color: var(--amarelo);
+    border-radius: 5px;
+}
+#to-share > a:hover{
+    opacity: 1;
 }
