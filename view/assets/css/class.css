@@ -1,7 +1,79 @@
 @charset "UTF-8";
 .flex {
-    width: 90%;
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+.mediaquery {
+    max-width: 1080px;
     margin: auto;
+}
+.vaga {
+    padding: 20px; 
+    border: 1px dashed var(--preto);
+    margin-bottom: 10px;
+}
+.divisor {
+    width: 100%;
+    height: 1px;
+    background-color: lightslategray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    opacity: 0.1;
+}
+.vaga > h1 {
+    font-size: var(--fonte-padrao);
+    color: var(--amarelo);
+}
+.vaga > h2 {
+    font-size: var(--fonte-padrao);
+    color: lightslategray;
+    font-weight: normal;
+}
+.vaga > div {
+    display: inline-block;
+}
+.vaga > div > i,
+.vaga > div > h3{
+    font-size: var(--fonte-media);
+    display: inline-block;
+    text-transform: uppercase;
+    color: lightslategray;
+}
+.vaga > div > h3{
+    font-weight: normal;
+    margin-right: 50px;
+}
+.vaga > div > i {
+    font-size: var(--fonte-padrao);
+    margin-right: 5px;
+    color: rgb(0, 173, 253);
+}
+.bt-vaga,
+.bt-vaga2{
+    float: right;
+    margin: 0px 5px;
+    padding: 10px;
+    color: white;
+    font-size: var(--fonte-menor);
+    border-radius: 5px;
+}
+.bt-vaga {
+    font-weight: bold;
+    background-color: var(--amarelo);
+}
+.bt-vaga2 {
+    font-weight: bold;
+    background-color: var(--preto);
+}
+.bt-vaga:hover {
+    color: var(--preto);
+    opacity: 0.8;
+}
+.bt-vaga2:hover {
+    color: var(--amarelo);
+    opacity: 0.8;
+}
+.vermelho {
+    color: red !important;
 }

@@ -1,13 +1,21 @@
 @charset "UTF-8";
 @import url('class.css');
+:root {
+    --fonte-menor: 12px;
+    --fonte-media: 14px;
+    --fonte-padrao: 16px;
+    --preto:  rgb(29, 29, 29);
+    --amarelo: #ffc700;
+}
 * {
     margin: 0px;
     padding: 0px;
+    overflow-x: hidden;
 }
 body, html {
     width: 100vw;
     height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 a {
     text-decoration: none;
@@ -17,18 +25,71 @@ a {
     height: 48px;
     background: url('https://agencialuppi.com.br/wp-content/uploads/2024/08/logobrancaeamarela.svg') no-repeat;
     background-size: contain;
+    margin-right: 60%;
 }
 header {
-    background-color: rgb(29, 29, 29);
+    font-size: var(--fonte-menor);
+    background-color: black;
     padding: 10px;
 }
 #login-user {
-    float: right;
-    font-size: 10px;
     color: white;
 }
 #login-user > a {
     font-weight: bold;
-    font-size: 10px;
     color: white;
+}
+#search-job {
+    position: relative;
+    height: 20vh;
+    text-align: center;
+    background: url('../img/backgroud.png') no-repeat center center;
+    background-size: cover;
+    color: var(--amarelo);
+}
+
+#search-job::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.9;
+    z-index: 1;
+    pointer-events: none;
+}
+
+#search-job > * {
+    position: relative;
+    z-index: 2;
+}
+#search-job > div > form {
+    padding: 15px;
+    width: 100%;
+}
+#search-job > div > form > div > input {
+    font-size: var(--fonte-media);
+    width: 280px;
+    padding: 10px;
+    color: lightslategray;
+}
+#search-job > div > form > button {
+    cursor: pointer;
+    font-size: var(--fonte-menor);
+    padding: 12px;
+    font-weight: bold;
+    color: white;
+    margin-left: 20px;
+    background: #e9b600;
+    border: none;
+    border-radius: 3px;
+}
+#search-job > div > form > button:hover {
+    color: white;
+    background: var(--amarelo);    
+}
+#vagas-abertas {
+    margin-top: 20px;
 }

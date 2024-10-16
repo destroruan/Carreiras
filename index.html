@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <div class="flex">
+        <div class="flex mediaquery">
             <div id="logotipo"></div>
             <div id="login-user">
                 <a href=""><i class="fa-solid fa-user"></i> Meu usuário</a>
@@ -19,7 +19,33 @@
         </div>
     </header>
     <main>
-
-    </main>    
+        <section id="search-job" class="flex">
+            <div class="mediaquery">
+                <h1>PESQUISE POR OPORTUNIDADES (INSCRIÇÕES ABERTAS)</h1>
+                <form action="" method="post" class="flex">
+                    <div>
+                        <input type="text" name="palavrachave" id="palavrachave" placeholder="PALAVRA-CHAVE | ADMINISTRAÇÃO, MARKETING, REMOTO">
+                    </div>
+                    <button type="submit">BUSCAR</button>
+                </form>
+            </div>
+        </section>
+        <section id="vagas-abertas">
+            <div class="mediaquery vaga">
+                <h1>BDR - QUALIFICAÇÃO DE LEADS - REMOTO</h1>
+                <div class="divisor"></div>
+                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, adipisci cumque. Officia voluptatem quia debitis mollitia repellendus quisquam a, excepturi magnam adipisci quam dolorem rerum harum labore sint? Mollitia, cupiditate.</h2>
+                <div class="divisor"></div>
+                <div>
+                    <i class="fa-solid fa-location-dot"></i><h3>Remoto - Brasil</h3>
+                </div>
+                <div>
+                    <i class="fa-solid fa-calendar-days vermelho"></i><h3>termina hoje</h3>
+                </div>
+                <a href="" class="bt-vaga">PARTICIPAR</a><a href="" class="bt-vaga2">DETALHES</a>
+            </div>
+        </section>
+    </main> 
+    <script src="controller/controller.js"></script>   
 </body>
 </html>
