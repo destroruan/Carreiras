@@ -26,7 +26,6 @@ a {
     height: 48px;
     background: url('https://agencialuppi.com.br/wp-content/uploads/2024/08/logobrancaeamarela.svg') no-repeat;
     background-size: contain;
-    margin-right: 60%;
 }
 header {
     font-size: var(--fonte-menor);
