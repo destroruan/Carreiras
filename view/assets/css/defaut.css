@@ -91,7 +91,7 @@ header {
     color: white;
     background: var(--amarelo);    
 }
-#vagas-abertas {
+main > section {
     margin-top: 20px;
 }
 #informations-job {
